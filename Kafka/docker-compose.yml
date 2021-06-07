@@ -1,5 +1,5 @@
 ---
-  version: '2'
+  version: '3.9'
   services:
     zookeeper:
       image: confluentinc/cp-zookeeper:latest
@@ -21,9 +21,5 @@
         KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
         KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
         KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-
-    # Create topic for testing
-    # docker-compose exec kafka bash
-    # /bin/kafka-topics --create --topic topic-name --bootstrap-server localhost:9092 
  
       

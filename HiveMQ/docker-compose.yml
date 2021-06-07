@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  redis:
+    image: hivemq/hivemq4:latest
+    ports:
+        - 8080:8080
+        - 1883:1883
